@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <section class="pop-btn yellow">
+        <section class="col-xs-1 back-arrow"><span class=""><a href="#"><img src="images/arrow.png" width="10" height="17" alt="Back Arrow"></a></span></section>
+        <section class="col-xs-9 title-text">Create Event</section>
+        <section class="col-xs-1 sprite pot-moreover"></section>
+        </section>
+    
+    <section class="container">
+    	
+    	
+    	<!-- Login form -->
+    		<section class="row">
+           <section class="col-xs-12">
+           		<form>
+                	
+                   
+                    <!--<section class="row">
+                        <section class="onoffswitch col-xs-6">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                            <label class="onoffswitch-label" for="myonoffswitch">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </section>
+                       <section class="col-xs-6">
+                        	<article class="form-group pot-form-group">
+                    		<span class="dropdown-icon"></span>
+							<input type="text" class="form-control form-control-ce  pop-form-control gry-bdr" id="password" placeholder="Category">
+                    </article>
+                        </section>
+                        
+                    </section>-->
+                	<article class="form-group pot-form-group">
+                     	
+                        <input type="text" class="form-control form-control-ce  pop-form-control gry-bdr org-bdr" id="name" placeholder="Event Name">
+                        <span class="col-gry error-msg">For ex. Sunday Funday</span>
+                    </article>
+                    
+                    <section class="row">
+                   		<section class="col-xs-6">
+                        	<article class="form-group pot-form-group">
+                    		<span class="date-icon"></span>
+							<input type="text" class="form-control form-control-ce  pop-form-control gry-bdr" id="password" placeholder="Date">
+                    </article>
+                        </section>
+                        <section class="col-xs-6">
+                        	 <article class="form-group pot-form-group">
+                     	<span class="time-icon"></span>
+                        <input type="text" class="form-control form-control-ce  pop-form-control gry-bdr" id="confirm password" placeholder="Start Time">
+                        <span class="col-gry error-msg"><a href="#">Add End Time</a> (Optional)</span>
+                    </article>
+                        </section>
+                    </section>
+                    
+                    <article class="form-group pot-form-group">
+                    	<span class="loc-icon"></span>
+						<input type="text" class="form-control form-control-ce  pop-form-control gry-bdr" id="name" placeholder="Location">
+                        <span class="col-gry error-msg">Type the complete address</span>
+                    </article>
+                    
+                   <section class="row create-event" style="margin-bottom:20px;">
+                        <section class="col-xs-4">
+                        <input type="radio" id="radio03" name="radio1" />
+                        <label for="radio03"><span></span>Veg</label>
+                        </section>
+
+                        <section class="col-xs-4">
+                         <input type="radio" id="radio04" name="radio1" />
+                         <label for="radio04"><span></span>N-Veg</label>
+                        </section>
+                        
+                         <section class="col-xs-4">
+                         <input type="radio" id="radio05" name="radio1" />
+                         <label for="radio05"><span></span>Both</label>
+                        </section>
+                    </section>
+                    
+                    
+    				
+					 <article class="form-group pot-form-group">
+                     	<span class="dropdown-icon"></span>
+						<input type="text" class="form-control form-control-ce  pop-form-control gry-bdr" id="name" placeholder="Choose Theme (Optional)">
+                       <!-- <span class="col-gry error-msg">(Optional)</span>-->
+                    </article>
+                    
+                    <section class="row chose-category" style="margin-bottom:20px;">
+                    	<section class="col-xs-6">
+                         <input type="radio" id="radio02" name="radio" checked/>
+                         <label for="radio02"><span></span>Invitees Choice </label>
+                        </section>
+                        
+                        <section class="col-xs-6">
+                        <input type="radio" id="radio01" name="radio" />
+                        <label for="radio01"><span></span>Assign Dishes</label>
+                        </section>
+                       
+					</section>
+                         
+                    
+                     <article class="form-group pot-form-group">
+                     	<span class="invfriends-icon"></span>
+						<input type="text" class="form-control form-control-ce  pop-form-control gry-bdr" id="name" placeholder="Assign Dishes">
+                        <span class="col-gry error-msg">Add dishes you prefer for this potluck.</span>
+                    </article>
+                    
+                    
+                     <article class="form-group pot-form-group">
+                     	<span class="invfriends-icon"></span>
+						<input type="text" class="form-control form-control-ce  pop-form-control gry-bdr" id="name" placeholder="Invite Friends">
+                        <span class="col-gry error-msg">5 friends has been invited. <a href="#">View</a></span>
+                    </article>
+                    
+                      <article class="form-group pot-form-group padbot40">
+                     <textarea placeholder="Enter your personalised message...(Optional)" class="menu-message gry-bdr"></textarea>
+                    </article>
+                      
+                   <!-- <button type="submit" class="btn pop-btn orange">Submit</button>
+                    <button type="submit" class="btn pop-btn gry">Cancel</button>-->
+                </form>
+                <section class="row">
+        			<button type="submit" class="btn pop-btn orange primary-btn">Submit</button>
+        		</section>
+           </section>
+        </section><!-- /Login form -->
+    </section>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    
+    <script type="text/javascript">
+    function customCheckbox(checkboxName){
+        var checkBox = $('input[name="'+ checkboxName +'"]');
+        $(checkBox).each(function(){
+            $(this).wrap( "<span class='custom-checkbox'></span>" );
+            if($(this).is(':checked')){
+                $(this).parent().addClass("selected");
+            }
+        });
+        $(checkBox).click(function(){
+            $(this).parent().toggleClass("selected");
+        });
+    }
+    $(document).ready(function (){
+        customCheckbox("terms[]");
+    })
+
+</script>
+
+
+  </body>
+</html>

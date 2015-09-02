@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="pop-btn yellow" style="margin-bottom:0px;">
+        <section class="col-xs-1 back-arrow"><span class=""><a href="#"><img src="images/arrow.png" width="10" height="17" alt="Back Arrow"></a></span></section>
+        <section class="col-xs-9 title-text">Potluck Menu</section>
+        <section class="col-xs-1 sprite pot-moreover"></section>
+        </section>
+    <section class="container">
+    	
+    	
+        <section class="row">
+        	<section class="col-xs-12 pop-tab pop-tab-three p0">
+            	<ul>
+                	<li class="w33"><a href="details.html">Details</a></li>
+                    <li class="active w33"><a href="#">Menu</a></li>
+                    <li class="w33"><a href="invitees.html">Invitees</a></li>
+                </ul>
+            </section>
+        </section>
+        
+        <!--<section class="row pot-details">
+        	<section class="col-xs-12 p0">
+                <article class="col-xs-9">
+                   <h3 class="mt0">Summer Special Spicy</h3>
+                   <p class="pot-time col-gry">24th Feb, 2015 | 12.30 pm - 3:00 pm</p>
+                </article>
+                <article class="col-xs-3 pot-name col-gry">
+                    Ram
+                </article>
+            </section>
+              <section class="col-xs-12 p0" style="padding-top:10px;">
+              	<section class="col-xs-4"><input type="button" value="Yes" class="tertiary-btn"></section>
+              	<section class="col-xs-4"><input type="button" value="No" class="tertiary-btn"></section>
+              	<section class="col-xs-4"><input type="button" value="May Be" class="tertiary-btn"></section>
+             </section>
+        </section>-->
+        
+    	<!--  -->
+    	<section class="row pot-details">
+            <article class="col-xs-9">
+               <h3 class="mt0">White Rice</h3>
+               <h3 class="mt0">Chicken Briyani</h3>
+               <p class="col-gry">Spicy chicken briyani, suffcient for 10 ppl</p>
+               <p class="pot-time col-gry">Feb 22, 9.15</p>
+               <p class="pot-msg"><a href="#"><img src="images/camera.png" width="16" height="16"> Upload Image</a></p>
+            </article>
+            <article class="col-xs-3 pot-name col-gry">
+                You
+            </article>
+        </section>
+        
+        <section class="row pot-details">
+            <article class="col-xs-9">
+               <h3 class="mt0">Chicken Manchurian</h3>
+               <p class="pot-time col-gry">24th Feb, 2015</p>
+               <p class="col-gry">Good enough for 8 ppl.</p>
+               <p class="pot-msg col-red">No photos updated.</p>
+            </article>
+            <article class="col-xs-3 pot-name col-gry">
+                Louis
+            </article>
+        </section>
+        
+        <section class="row pot-details">
+            <article class="col-xs-9">
+               <h3 class="mt0">Mutton Briyani</h3>
+               <p class="pot-time col-gry">24th Feb, 2015</p>
+               <p class="col-gry">Spicy and authentic mutton briyani.</p>
+               <ul class="img-preview">
+               		<li></li>
+                    <li></li>
+                    <div class="clear"></div>
+               </ul>
+              <!-- <p class="pot-msg col-grn">You've accepted the invitation</p>-->
+            </article>
+            <article class="col-xs-3 pot-name col-gry">
+               Arun Gadela
+            </article>
+        </section>
+        
+        <section class="row pot-details">
+            <article class="col-xs-9">
+               <h3 class="mt0">Butter Naan</h3>
+               <p class="pot-time col-gry">24th Feb, 2015</p>
+            </article>
+            <article class="col-xs-3 pot-name col-gry">
+                Louis
+            </article>
+        </section>
+        
+        <!--<section class="row">
+        	<button type="submit" class="btn pop-btn orange primary-btn">Submit</button>
+        </section>-->
+    </section>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    
+    <script type="text/javascript">
+    function customCheckbox(checkboxName){
+        var checkBox = $('input[name="'+ checkboxName +'"]');
+        $(checkBox).each(function(){
+            $(this).wrap( "<span class='custom-checkbox'></span>" );
+            if($(this).is(':checked')){
+                $(this).parent().addClass("selected");
+            }
+        });
+        $(checkBox).click(function(){
+            $(this).parent().toggleClass("selected");
+        });
+    }
+    $(document).ready(function (){
+        customCheckbox("terms[]");
+    })
+</script>
+  </body>
+</html>

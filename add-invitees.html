@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Bootstrap 101 Template</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<section class="pop-btn yellow">
+  <section class="col-xs-1 back-arrow"><span class=""><a href="#"><img src="images/arrow.png" width="10" height="17" alt="Back Arrow"></a></span></section>
+  <section class="col-xs-9 title-text">Add Invitees</section>
+  <section class="col-xs-1 sprite pot-moreover"></section>
+</section>
+<section class="container"> 
+  
+  <!-- Login form -->
+  <section class="row">
+    <section class="col-xs-12">
+      <form>
+        <article class="form-group pot-form-group"> <span class="invfriends-icon"></span>
+          <input type="text" class="form-control form-control-ce  pop-form-control gry-bdr" id="name" placeholder="Type contact name...">
+          <span class="col-gry error-msg">Add invitees to the event.</span> </article>
+        <section class="row invitees-details">
+          <section class="col-xs-12 p0">
+            <section class="col-xs-2"> <img src="images/thumbnail.png" width="35" height="35" alt="thumbnail"> </section>
+            <article class="col-xs-7">
+              <h3 class="mt0">Sajindas</h3>
+            </article>
+            <article class="pot-name col-gry col-xs-3"> <a href="#"><span class="close-icon"></span></a> </article>
+          </section>
+        </section>
+        <section class="row invitees-details">
+          <section class="col-xs-12 p0">
+            <section class="col-xs-2"> <img src="images/thumbnail.png" width="35" height="35" alt="thumbnail"> </section>
+            <article class="col-xs-7">
+              <h3 class="mt0">Pooja Sajindas</h3>
+            </article>
+            <article class="pot-name col-gry col-xs-3"> <a href="#"><span class="close-icon"></span></a> </article>
+          </section>
+        </section>
+        <section class="row invitees-details">
+          <section class="col-xs-12 p0">
+            <section class="col-xs-2"> <img src="images/thumbnail.png" width="35" height="35" alt="thumbnail"> </section>
+            <article class="col-xs-7">
+              <h3 class="mt0">Pavithra Saravanan</h3>
+            </article>
+            <article class="pot-name col-gry col-xs-3"> <a href="#"><span class="close-icon"></span></a> </article>
+          </section>
+        </section>
+        <section class="row invitees-details">
+          <section class="col-xs-12 p0">
+            <section class="col-xs-2"> <img src="images/thumbnail.png" width="35" height="35" alt="thumbnail"> </section>
+            <article class="col-xs-7">
+              <h3 class="mt0">Puneet Archana</h3>
+            </article>
+            <article class="pot-name col-gry col-xs-3"> <a href="#"><span class="close-icon"></span></a> </article>
+          </section>
+        </section>
+        <section class="row invitees-details">
+          <section class="col-xs-12 p0">
+            <section class="col-xs-2"> <img src="images/thumbnail.png" width="35" height="35" alt="thumbnail"> </section>
+            <article class="col-xs-7">
+              <h3 class="mt0">Elumalai</h3>
+            </article>
+            <article class="pot-name col-gry col-xs-3"> <a href="#"><span class="close-icon"></span></a> </article>
+          </section>
+        </section>
+        <section class="row invitees-details">
+          <section class="col-xs-12 p0">
+            <section class="col-xs-2"> <img src="images/thumbnail.png" width="35" height="35" alt="thumbnail"> </section>
+            <article class="col-xs-7">
+              <h3 class="mt0">Hariharath Majan</h3>
+            </article>
+            <article class="pot-name col-gry col-xs-3"> <a href="#"><span class="close-icon"></span></a> </article>
+          </section>
+        </section>
+        
+        <section class="row invitees-details">
+          <section class="col-xs-12 p0">
+            <section class="col-xs-2"> <img src="images/thumbnail.png" width="35" height="35" alt="thumbnail"> </section>
+            <article class="col-xs-7">
+              <h3 class="mt0">Saravanakumar Muthuramalingam</h3>
+            </article>
+            <article class="pot-name col-gry col-xs-3"> <a href="#"><span class="close-icon"></span></a> </article>
+          </section>
+        </section>
+        
+      </form>
+      <section class="row">
+        <button type="submit" class="btn pop-btn orange primary-btn">Submit</button>
+      </section>
+    </section>
+  </section>
+  <!-- /Login form --> 
+</section>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<!-- <script src="js/bootstrap.min.js"></script> --> 
+
+<script type="text/javascript">
+    function customCheckbox(checkboxName){
+        var checkBox = $('input[name="'+ checkboxName +'"]');
+        $(checkBox).each(function(){
+            $(this).wrap( "<span class='custom-checkbox'></span>" );
+            if($(this).is(':checked')){
+                $(this).parent().addClass("selected");
+            }
+        });
+        $(checkBox).click(function(){
+            $(this).parent().toggleClass("selected");
+        });
+    }
+    $(document).ready(function (){
+        customCheckbox("terms[]");
+    })
+</script>
+</body>
+</html>
