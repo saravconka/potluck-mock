@@ -1,0 +1,65 @@
+﻿<!-- logo -->
+<section class="row">
+    <section class="col-xs-12 logo" style="margin-top:10%;">
+        <img src="images/pl-logo.png" width="371" height="145">
+
+    </section>
+</section>
+<!-- /logo -->
+
+<section class="row">
+    <section class="col-xs-12">
+        <h3 class="pot-divider">Connect with</h3>
+    </section>
+</section><!-- /sep -->
+
+<!-- social icons -->
+<section class="row">
+    <section class="col-xs-12 social-icons">
+        <section class="col-xs-2"></section>
+        <section class="col-xs-4"><a href="#"><img src="images/facebook.png"></a></section>
+        <section class="col-xs-4"><a href="#"><img src="images/twitter.png"></a></section>
+        <section class="col-xs-2"></section>
+    </section>
+</section>
+<!-- /social icons -->
+
+<section class="row">
+    <section class="col-xs-12">
+        <h3 class="pot-divider">or</h3>
+    </section>
+</section>
+
+<!-- Login form -->
+<section class="row">
+    <section class="col-xs-12">
+        <form name="loginform" novalidate>
+            <article class="form-group pot-form-group">
+                <label for="username" class="label-hide">Username</label>
+                <input type="text" class="form-control pop-form-control sprite us" id="username" placeholder="Username" ng-model="username" required>
+                <br />
+                <span style="color:red" ng-show="loginform.username.$dirty && loginform.username.$invalid && loginform.username.$error.required">User name is required</span>
+            </article>
+
+            <article class="form-group pot-form-group">
+                <label for="password" class="label-hide">Password</label>
+                <input type="password" class="form-control pop-form-control sprite pd" id="password" placeholder="Password" ng-model="password" required>
+                <br />
+                <span style="color:red" ng-show="loginform.password.$dirty && loginform.password.$invalid && loginform.password.$error.required">password is required</span>
+            </article>
+            <button type="submit" class="btn pop-btn orange" ng-disabled="loginform.username.$invalid || loginform.password.$invalid" ng-click="login()">Sign In</button>
+        </form>
+    </section>
+    <!-- sep -->
+
+</section><!-- /Login form -->
+
+<section class="row">
+    <section class="col-xs-12">
+        <article class="pot-forgot pot-forgot-line text-center">
+            <a href="forgot-password.html">Forgot Password?</a>
+            <a href="/registration">New Here? Sign Up</a>
+        </article>
+    </section>
+</section>
+
