@@ -96,15 +96,10 @@ factories.factory('EventSvc', ['$http', '$exceptionHandler', 'StorageFactory', f
 
     _eventApi.getEvents = function () {
 
-        if (_MOCK) {
-            return _MOCKEventList;
-        }
-
-        return $http.get('api/Event').success(function (data) {
+        return $http.get('api/Events').success(function (data) {
 
             console.log(data);
-
-            //return JSON.parse(data);
+            //return angular.fromJson(data); //JSON.parse(data);
             return data;
 
         }).error(function (error) {

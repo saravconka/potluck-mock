@@ -32,7 +32,7 @@ controllers.controller('loginCtrl', ['$scope', '$location', 'AuthenticationSvc',
 
 //Landing Page controller
 controllers.controller('landingCtrl', ['$scope', '$location', 'AuthenticationSvc', 'EventSvc', function ($scope, $location, AuthenticationSvc, EventSvc) {
-
+    $scope.eventList = [];
     $scope.userName = AuthenticationSvc.getSession().userProfile.name;
     $scope.userEmail = AuthenticationSvc.getSession().userProfile.email;
 
@@ -41,16 +41,16 @@ controllers.controller('landingCtrl', ['$scope', '$location', 'AuthenticationSvc
     }
 
     //REPLACE THIS WITH NGMOCK IMPLEMENTATION
-    $scope.eventList = EventSvc.getEvents();
+    //$scope.eventList = EventSvc.getEvents();
 
-    //EventSvc.getEvents().success(function (data) {
-    //    console.log(data[0].EventName);
-    //    $scope.eventList = data;
-    //}).error(function (e) {
-    //    console.log(e);
-    //});
-    
-    
+    EventSvc.getEvents().success(function (data) {
+        $scope.eventList = data;
+    }).error(function (e) {
+        console.log(e);
+        //Handle errors bubbled from service calls here
+    });
+
+
 }]);
 
 //Registration page controller
