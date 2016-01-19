@@ -31,12 +31,10 @@ potluck.config(function($routeProvider, $locationProvider){
       controller: 'landingCtrl'
     });
     
-    
     $routeProvider.when('/registration', {
       templateUrl: 'registration.html',
       controller: 'registrationCtrl'
     });
-    
     
     $routeProvider.when('/forgotpassword', {
       templateUrl: 'choose-password.html' 
@@ -46,7 +44,7 @@ potluck.config(function($routeProvider, $locationProvider){
         templateUrl: 'create-event.html',
         controller: 'eventCtrl'
     });
-    
+
     // use the HTML5 History API
     $locationProvider.html5Mode(true);  //Used to remove # and make pretty Urls
 

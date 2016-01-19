@@ -37,6 +37,7 @@ controllers.controller('landingCtrl', ['$scope', '$location', 'AuthenticationSvc
     $scope.userEmail = AuthenticationSvc.getSession().userProfile.email;
 
     $scope.createEvent = function () {
+        console.log('Create Event clicked');
         $location.path('/createevent');
     }
 

@@ -29,7 +29,7 @@ function getMockData(mockTypeInput) {
                       {
                           "EventId": "4b8052a7-2432-4807-b3cc-d9d2fe16ae75",
                           "EventStatus": "active",
-                          "EventName": "Summer Special Spicy",
+                          "EventName": "Summer Special Spicy changed",
                           "EventDate": "2015-02-24T00:00:00",
                           "EventStartTime": "12:30",
                           "EventEndTime": "15:30",
